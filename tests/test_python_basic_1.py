@@ -12,20 +12,20 @@ elif mood == "плохо":
 p_speed = float(input())
 v_speed = float(input())
 if p_speed > v_speed:
-    print('Петя')
+    print("Петя")
 else:
-    print('Вася')
+    print("Вася")
 
 
 p_speed = float(input())
 v_speed = float(input())
 t_speed = float(input())
 if p_speed > v_speed and p_speed > t_speed:
-    print('Петя')
+    print("Петя")
 elif t_speed > v_speed and t_speed > p_speed:
-    print('Толя')
+    print("Толя")
 else:
-    print('Вася')
+    print("Вася")
 
 
 year = int(input())
@@ -37,10 +37,10 @@ else:
 
 
 number = int(input())
-a = number // 1000           # первая цифра
-b = (number // 100) % 10     # вторая цифра
-c = (number // 10) % 10      # третья цифра
-d = number % 10              # четвертая цифра
+a = number // 1000  # первая цифра
+b = (number // 100) % 10  # вторая цифра
+c = (number // 10) % 10  # третья цифра
+d = number % 10  # четвертая цифра
 if a == d and b == c:
     print("YES")
 else:
@@ -62,13 +62,13 @@ else:
 password = int(input())
 
 # Извлекаем цифры числа
-hundreds = password // 100          # цифра сотен
-tens = (password // 10) % 10      # цифра десятков
-units = password % 10             # цифра единиц
+hundreds = password // 100  # цифра сотен
+tens = (password // 10) % 10  # цифра десятков
+units = password % 10  # цифра единиц
 
 # Находим суммы
-sum_last_two = tens + units        # сумма десятков и единиц (двух младших цифр)
-sum_first_two = hundreds + tens   # сумма сотен и десятков (двух старших цифр)
+sum_last_two = tens + units  # сумма десятков и единиц (двух младших цифр)
+sum_first_two = hundreds + tens  # сумма сотен и десятков (двух старших цифр)
 
 # Записываем суммы в порядке невозрастания (от большей к меньшей)
 if sum_first_two >= sum_last_two:
@@ -77,3 +77,15 @@ else:
     result = int(str(sum_last_two) + str(sum_first_two))
 
 print(result)
+
+
+a = float(input())
+b = float(input())
+c = float(input())
+
+# Проверяем условие существования треугольника:
+# сумма любых двух сторон должна быть строго больше третьей стороны
+if (a + b > c) and (a + c > b) and (b + c > a):
+    print("YES")
+else:
+    print("NO")
