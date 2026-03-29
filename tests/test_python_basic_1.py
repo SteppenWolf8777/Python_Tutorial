@@ -57,3 +57,23 @@ elif name2 <= name1 and name2 <= name3:
     print(name2)
 else:
     print(name3)
+
+
+password = int(input())
+
+# Извлекаем цифры числа
+hundreds = password // 100          # цифра сотен
+tens = (password // 10) % 10      # цифра десятков
+units = password % 10             # цифра единиц
+
+# Находим суммы
+sum_last_two = tens + units        # сумма десятков и единиц (двух младших цифр)
+sum_first_two = hundreds + tens   # сумма сотен и десятков (двух старших цифр)
+
+# Записываем суммы в порядке невозрастания (от большей к меньшей)
+if sum_first_two >= sum_last_two:
+    result = int(str(sum_first_two) + str(sum_last_two))
+else:
+    result = int(str(sum_last_two) + str(sum_first_two))
+
+print(result)
