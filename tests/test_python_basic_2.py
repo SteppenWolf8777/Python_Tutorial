@@ -40,3 +40,18 @@ my_function("Sweden")
 my_function("India")
 my_function()
 my_function("Brazil")
+
+
+def my_function(animal, name):
+  print("I have a", animal)
+  print("My", animal + "'s name is", name)
+
+my_function(name = "Buddy", animal = "dog")
+
+
+def my_function(fruits):
+  for fruit in fruits:
+    print(fruit)
+
+my_fruits = ["apple", "banana", "cherry"]
+my_function(my_fruits)
