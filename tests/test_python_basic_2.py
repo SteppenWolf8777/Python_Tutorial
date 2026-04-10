@@ -87,3 +87,13 @@ def my_generator():
 
 for value in my_generator():
   print(value)
+
+
+print(list(range(5)))
+print(list(range(1, 6)))
+print(list(range(5, 20, 3)))
+
+
+r = range(0, 10, 2)
+print(6 in r)
+print(7 in r)
