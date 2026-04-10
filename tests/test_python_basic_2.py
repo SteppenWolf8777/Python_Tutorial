@@ -97,3 +97,23 @@ print(list(range(5, 20, 3)))
 r = range(0, 10, 2)
 print(6 in r)
 print(7 in r)
+
+
+r = range(0, 10, 2)
+print(len(r))
+
+
+mytuple = ("apple", "banana", "cherry")
+myit = iter(mytuple)
+
+print(next(myit))
+print(next(myit))
+print(next(myit))
+
+
+mytuple = ("apple", "banana", "cherry")
+
+for x in mytuple:
+  print(x)
+
+
