@@ -19,3 +19,9 @@ print(x)
 x = datetime.datetime(2018, 6, 1)
 
 print(x.strftime("%B"))
+
+
+x = abs(-7.25)
+
+print(x)
+
