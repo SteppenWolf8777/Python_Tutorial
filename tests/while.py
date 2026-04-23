@@ -82,3 +82,4 @@ for n in range(3):
         break
 else:
     print("Не видим это")  # не выполнится
+
