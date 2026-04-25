@@ -84,7 +84,7 @@ car1 = Car("Toyota", "Corolla", 2020)
 car1.display_info()
 
 
-class Person:
+class Person5:
   def __init__(self, name):
     self.name = name
 
@@ -95,5 +95,37 @@ class Person:
     message = self.greet()
     print(message + "! Welcome to our website.")
 
-p1 = Person("Tobias")
+p1 = Person5("Tobias")
 p1.welcome()
+
+
+class Person6:
+  species = "Human" # Class property
+
+  def __init__(self, name):
+    self.name = name # Instance property
+
+p1 = Person6("Emil")
+p2 = Person6("Tobias")
+
+print(p1.name)
+print(p2.name)
+print(p1.species)
+print(p2.species)
+
+
+class Person7:
+  lastname = ""
+
+  def __init__(self, name):
+    self.name = name
+
+p1 = Person7("Linus")
+p2 = Person7("Emil")
+
+Person.lastname = "Refsnes"
+
+print(p1.lastname)
+print(p2.lastname)
+
+
