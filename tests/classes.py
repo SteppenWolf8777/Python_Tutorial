@@ -129,3 +129,13 @@ print(p1.lastname)
 print(p2.lastname)
 
 
+class Calculator:
+  def add(self, a, b):
+    return a + b
+
+  def multiply(self, a, b):
+    return a * b
+
+calc = Calculator()
+print(calc.add(5, 3))
+print(calc.multiply(4, 7))
