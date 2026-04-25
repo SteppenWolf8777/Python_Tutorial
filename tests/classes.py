@@ -9,20 +9,20 @@ print(p1.name)
 print(p1.age)
 
 
-class Person:
+class Person2:
   def __init__(self, name, age=18):
     self.name = name
     self.age = age
 
-p1 = Person("Emil")
-p2 = Person("Tobias", 25)
+p1 = Person2("Emil")
+p2 = Person2("Tobias", 25)
 
 print(p1.name, p1.age)
 print(p2.name, p2.age)
 
 
 
-class Person:
+class Person3:
     def __init__(self, name, age):
         self.name = name
         self.age = age
@@ -31,7 +31,7 @@ class Person:
         print(f"Привет, меня зовут {self.name}")
 
 # Создаём объект p1 класса Person с именем "John" и возрастом 36
-p1 = Person("John", 36)
+p1 = Person3("John", 36)
 
 # Вызываем метод greet на объекте p1
 p1.greet()
@@ -50,15 +50,22 @@ d1 = Dog("Buddy", 3)
 d1.bark()
 
 
-class Person:
-  def __init__(self, name):
+class Person4:
+  def __init__(self, name, age):
     self.name = name
+    self.age = age
 
   def printname(self):
     print(self.name)
 
-p1 = Person("Tobias")
-p2 = Person("Linus")
+  def greet(self):
+      print(self.age)
+
+p1 = Person4("Tobias", 25)
+p2 = Person4("Linus", 36)
+print(p1.name, p1.age)
+print(p2.name, p2.age)
+
 
 p1.printname()
-p2.printname()
+p2.greet()
