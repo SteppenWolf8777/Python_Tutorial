@@ -139,3 +139,98 @@ class Calculator:
 calc = Calculator()
 print(calc.add(5, 3))
 print(calc.multiply(4, 7))
+
+
+class Person8:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+  def celebrate_birthday(self):
+    self.age += 1
+    print(f"Happy birthday! You are now {self.age}")
+
+p1 = Person8("Linus", 25)
+p1.celebrate_birthday()
+p1.celebrate_birthday()
+
+
+class Playlist:
+  def __init__(self, name):
+    self.name = name
+    self.songs = []
+
+  def add_song(self, song):
+    self.songs.append(song)
+    print(f"Added: {song}")
+
+  def remove_song(self, song):
+    if song in self.songs:
+      self.songs.remove(song)
+      print(f"Removed: {song}")
+
+  def show_songs(self):
+    print(f"Playlist '{self.name}':")
+    for song in self.songs:
+      print(f"- {song}")
+
+my_playlist = Playlist("Favorites")
+my_playlist.add_song("Bohemian Rhapsody")
+my_playlist.add_song("Stairway to Heaven")
+my_playlist.show_songs()
+
+
+class Person:
+  def __init__(self, fname, lname):
+    self.firstname = fname
+    self.lastname = lname
+
+  def printname(self):
+    print(self.firstname, self.lastname)
+
+#Use the Person class to create an object, and then execute the printname method:
+
+x = Person("John", "Doe")
+x.printname()
+
+
+class Car:
+  def __init__(self, brand, model):
+    self.brand = brand
+    self.model = model
+
+  def move(self):
+    print("Drive!")
+
+class Boat:
+  def __init__(self, brand, model):
+    self.brand = brand
+    self.model = model
+
+  def move(self):
+    print("Sail!")
+
+class Plane:
+  def __init__(self, brand, model):
+    self.brand = brand
+    self.model = model
+
+  def move(self):
+    print("Fly!")
+
+car1 = Car("Ford", "Mustang")       #Create a Car object
+boat1 = Boat("Ibiza", "Touring 20") #Create a Boat object
+plane1 = Plane("Boeing", "747")     #Create a Plane object
+
+for x in (car1, boat1, plane1):
+  x.move()
+
+
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.__age = age # Private property
+
+p1 = Person("Emil", 25)
+print(p1.name)
+# print(p1.__age) This will cause an error
