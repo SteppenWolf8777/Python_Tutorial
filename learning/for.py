@@ -6,7 +6,7 @@ nums = [10, 20, 30]
 for n in nums:
     print(n)
 
-fruits = ['apple', 'banana', 'cherry']
+fruits = ["apple", "banana", "cherry"]
 for fruit in fruits:
     print(fruit)
 
@@ -101,16 +101,17 @@ for p in people:
 # Вложенные циклы
 for i in range(2):  # range - это функция, которая возвращает последовательность чисел
     for j in range(3):
-        print(i,
-              j)  # будет напечатано 6 пар чисел, потому что внутренний цикл будет выполнен 3 раза для каждой итерации внешнего цикла
+        print(
+            i, j
+        )  # будет напечатано 6 пар чисел, потому что внутренний цикл будет выполнен 3 раза для каждой итерации внешнего цикла
 
 # генераторы списков
 #  [<выражение> for <переменная> in <итерируемое> if <условие>]
 # квадраты чисел 0..4
-squares = [x*x for x in range(5)]            # [0, 1, 4, 9, 16]
+squares = [x * x for x in range(5)]  # [0, 1, 4, 9, 16]
 
 # только чётные
-evens = [x for x in range(10) if x % 2 == 0] # [0, 2, 4, 6, 8]
+evens = [x for x in range(10) if x % 2 == 0]  # [0, 2, 4, 6, 8]
 
 # трансформация строк
 upper = [name.strip().upper() for name in ["  elena ", "qa "]]  # ['ELENA', 'QA']
@@ -121,4 +122,4 @@ labels = ["even" if x % 2 == 0 else "odd" for x in range(5)]
 
 
 # Генераторные выражения
-total = sum(x*x for x in range(10))
+total = sum(x * x for x in range(10))

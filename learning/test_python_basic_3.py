@@ -1,6 +1,5 @@
 import datetime
 
-
 x = datetime.datetime.now()
 print(x)
 
@@ -24,4 +23,3 @@ print(x.strftime("%B"))
 x = abs(-7.25)
 
 print(x)
-
