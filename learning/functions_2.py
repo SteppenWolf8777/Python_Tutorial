@@ -1,8 +1,8 @@
 from operator import itemgetter
 from pprint import pprint
 
-
 # Объявляем функцию
+
 
 def my_func():
     print("Мы вызвали функцию!")
